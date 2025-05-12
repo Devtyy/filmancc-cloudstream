@@ -14,4 +14,4 @@ Provider dla serwisu [Filman.cc](https://filman.cc ), umożliwiający wyszukiwan
 
 1. Otwórz **CloudStream**
 2. Idź do: **Ustawienia → Rozszerzenia → (+) → Dodaj własne rozszerzenie**
-3. Wklej:
+3. Wklej: https://raw.githubusercontent.com/Devtyy/filmancc-cloudstream/main/plugins.json
