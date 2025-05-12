@@ -1,0 +1,36 @@
+name: Build CloudStream Plugin
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'adopt'
+
+      - name: Download CloudStream Template
+        run: |
+          git clone https://github.com/reCloudStream/CloudStreamTemplate.git  .
+          cp ../FilmanCcProvider.kt app/src/main/java/xyz/filman/filmancc/FilmanCcProvider.kt
+
+      - name: Build APK
+        run: ./gradlew assembleRelease
+
+      - name: Rename to .cs3
+        run: mv app/release/app-release.apk FilmanCc.cs3
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: FilmanCcPlugin
+          path: FilmanCc.cs3
+          retention-days: 1

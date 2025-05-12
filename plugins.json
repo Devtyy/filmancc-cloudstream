@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Filman.cc",
+    "version": 2,
+    "language": "pl",
+    "apiVersion": 1,
+    "tvTypes": ["Movie"],
+    "internalName": "FilmanCcProvider",
+    "iconUrl": "https://www.google.com/s2/favicons?domain=filman.cc&sz=128 ",
+    "status": 1,
+    "fileSize": 12580,
+    "authors": ["Devtyy"],
+    "repositoryUrl": "https://github.com/Devtyy/filmancc-cloudstream ",
+    "url": "https://github.com/Devtyy/filmancc-cloudstream/releases/latest/download/FilmanCc.cs3 "
+  }
+]

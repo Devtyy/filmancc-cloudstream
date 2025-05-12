@@ -1,0 +1,16 @@
+*.iml
+.idea/
+.gradle/
+.DS_Store
+Thumbs.db
+/build/
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+*.orig
+*.pyc
+*.pyo
+*.pyd
+__pycache__
